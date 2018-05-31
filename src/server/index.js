@@ -1,7 +1,7 @@
 const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
-const setupApiRoutes = require('./apis/api');
+const setupApiRoutes = require('./middlewares/api.config');
 const logger = require('./logger');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';

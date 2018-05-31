@@ -14,7 +14,8 @@
     "build": "npm run build:client && npm run build:server",
     "build:client": "cross-env NODE_ENV=production webpack -p --progress --config=config/webpack.config.prod.js",
     "build:server": "copyfiles -a -u 1 src/server/**/**/* build",
-    "start": "cross-env NODE_ENV=production node build/server"
+    "start": "cross-env NODE_ENV=production node build/server",
+    "server": "nodemon node src/server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -40,6 +41,7 @@
     "js-loader": "^0.1.1",
     "jsx-loader": "^0.13.2",
     "lodash": "^4.17.10",
+    "nodemon": "^1.12.1",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
