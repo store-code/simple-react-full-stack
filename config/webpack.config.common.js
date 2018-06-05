@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 module.exports = {
   target: 'web',
-  entry: ['./src/client/index.js'],
+  entry: ['./src/index.js'],
   output: {
     publicPath: '/',
     path: resolve(__dirname, '..', 'build', 'client'),

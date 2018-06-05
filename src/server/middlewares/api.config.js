@@ -1,6 +1,6 @@
 // API
 
-const servers = [{id: 1, name: 'simple react full stack'}];
+const servers = [{id: 1, name: 'simple react full stack 1'}];
 
 module.exports = function setup(app) {
   app.get('/api/stats', (req, res) => {

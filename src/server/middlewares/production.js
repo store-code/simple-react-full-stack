@@ -2,7 +2,7 @@ const {resolve} = require('path');
 const express = require('express');
 const compression = require('compression');
 
-const clientBuildPath = resolve(__dirname, '..', '..', 'client');
+const clientBuildPath = resolve(__dirname, '..', 'src');
 
 module.exports = function setup(app) {
   app.use(compression());
